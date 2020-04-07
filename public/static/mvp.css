@@ -128,7 +128,6 @@ nav {
     display: flex;
     font-weight: bold;
     justify-content: space-between;
-    margin-bottom: 3rem;
 }
 
 nav ul {
@@ -450,6 +449,8 @@ h1 {
     font-size: 4em;
     font-weight: 900;
     padding: 0em;
+    margin: 0em;
+    margin-bottom: 1em;
 }
 
 .rainbow-text {

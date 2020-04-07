@@ -1,0 +1,11 @@
+{
+    "message":"hey, are you drinking enough water? have a glass once in a while, it's good for you.",
+    "targetURL": "https://media.healthdirect.org.au/images/inline/original/water-and-your-health-v2-9ec4a5.png",
+    "targetChannels":[
+       "griffin-hackathon"
+    ],
+    "targetPeople":[
+       "danut"
+    ],
+    "whenToPost":"2020-04-07T18:25:43.511Z"
+ }

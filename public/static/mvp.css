@@ -449,9 +449,11 @@ footer {
 h1 {
     font-size: 4em;
     font-weight: 900;
+    padding: 0em;
 }
 
 .rainbow-text {
     background-image: linear-gradient(to right, violet, indigo,red);   -webkit-background-clip: text;
     color: transparent;
 }
+

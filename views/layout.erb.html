@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="static/mvp.css">
+    <meta charset="utf-8">
+    <title>Buzz - a Griffin hackathon product</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><img alt="Logo" src="https://i.pinimg.com/originals/f0/74/2d/f0742daeeecfe89544310d4cb8d6b8fa.gif" height="128"></a>
+            <ul>
+                <li><a href="/manage">manage</a></li>
+                <li>settings</li>
+                <li><a href="/about">about</a></li>
+            </ul>
+        </nav>
+        <h1 class="rainbow-text">buzz</h1>
+    </header>
+    <main>
+        <%= yield %>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            built by Danut Enache & Bogdan Paun
+        </p>
+    </footer>
+</body>
+   
+</html>

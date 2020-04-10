@@ -1,0 +1,19 @@
+<section>
+
+<% @messages.each do |m| %>
+    <%= m[0][1] %> <br>
+    <%= m[1][1] %> <br>
+    <%= m[2][1] %> <br>
+
+<% end %>
+
+<form action="/messages" method="POST">
+    message <input type="textarea" name="message">
+    URL <input type="text" name="targetURL">
+    channel <input type="text" name="targetChannel">
+    people <input type="text" name="targetPeople">
+    when? <input type="datetime" name="whenToPost">
+    <input type="submit" value="create">
+</form>
+
+</section>

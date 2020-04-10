@@ -1,4 +1,5 @@
 require "sinatra"
+require "json"
 
 Tilt.register Tilt::ERBTemplate, 'erb.html'
 
@@ -7,13 +8,14 @@ get "/" do
 end
 
 # get the management page
-get "/manage" do
-  erb :manage
+get "/messages" do
+  @messages = read_yaml_data
+  erb :messages
 end
 
 # create new message
-post "/manage" do
-  nil
+post "/messages" do
+  params.to_json
 end
 
 # get about page
@@ -25,9 +27,4 @@ end
 get "/json" do
   content_type 'application/json'
   get_file
-end
-
-# mock data store
-def get_file(filename="resources/simple-buzz-sample.json")
-  File.read(filename)
 end

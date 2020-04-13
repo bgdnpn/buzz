@@ -10,9 +10,7 @@
             <input type="submit" value="create">
         </form>
     </div>
-</section>
-<section>
-    <div style="float: left;">
+    <div style="float: left; margin-left: 3em; padding: 2em; border-left: 5px solid mediumslateblue;">
         <h3>Already scheduled messages:</h3>
         <% @messages["buzzmessages"].each do |m| %>
             <p><%= m["message"] %></p>

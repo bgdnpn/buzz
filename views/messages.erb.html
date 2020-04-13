@@ -1,13 +1,6 @@
 <section>
-    <div style="width: 100%;">
-        <% @messages["buzzmessages"].each do |m| %>
-            <aside>
-                <p><%= m["message"] %></p>
-            </aside>
-        <% end %>
-    </div>
-
-    <div>
+    <div style="float: left;">
+        <h3>Create a new scheduled message:</h3>
         <form action="/messages" method="POST">
             message <input type="textarea" name="message">
             URL <input type="text" name="targetURL">
@@ -16,5 +9,13 @@
             when? <input type="datetime" name="whenToPost">
             <input type="submit" value="create">
         </form>
+    </div>
+</section>
+<section>
+    <div style="float: left;">
+        <h3>Already scheduled messages:</h3>
+        <% @messages["buzzmessages"].each do |m| %>
+            <p><%= m["message"] %></p>
+        <% end %>
     </div>
 </section>

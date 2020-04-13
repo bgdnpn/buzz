@@ -17,8 +17,7 @@ end
 
 # create new message
 post "/messages" do
-  body = "{'message': %s}" % params["message"]
-  content_type "application/json"
+  body = {message: params["message"]}
   API.post_message(API::URL, body)
   redirect "/messages"
 end

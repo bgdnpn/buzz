@@ -13,7 +13,8 @@
     <div style="float: left; margin-left: 3em; padding: 2em; border-left: 5px solid mediumslateblue;">
         <h3>Already scheduled messages:</h3>
         <% @messages["buzzmessages"].each do |m| %>
-            <p><%= m["message"] %></p>
+            <p style="border-left: 2px solid salmon; padding-left: 1em"><%= m["message"] %></p>
+            <small>send to <%= @channels.sample %> at <%= (DateTime.now + (rand * 21)).strftime("%I:%M%p on %m/%d/%Y")  %></small>
         <% end %>
     </div>
 </section>

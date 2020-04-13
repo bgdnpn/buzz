@@ -11,7 +11,7 @@ end
 # get the management page
 get "/messages" do
   @messages = JSON.parse(API.get_all_messages(API::URL).body)
-  p @messages
+  @channels = ["#random", "#fun_at_work", "#general", "#product", "#runners", "#dev", "#support"]
   erb :messages
 end
 
